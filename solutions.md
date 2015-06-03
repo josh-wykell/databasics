@@ -50,4 +50,6 @@ yields most ordered:
 
 What user spent the most?
 
+`SELECT user_id, SUM(quantity), SUM(price*quantity) FROM orders JOIN items ON items.id = orders.item_id  GROUP BY user_id ORDER BY SUM(price*quantity) DESC LIMIT 1;`
+
 What were the top 3 highest grossing categories?
