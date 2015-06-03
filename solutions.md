@@ -36,7 +36,7 @@ Simulate buying an item by inserting a User for yourself and an Order for that U
 `INSERT INTO users (first_name, last_name, email)
 VALUES('Josh', 'Wykell', 'poopdog@prodigy.com');`
 `INSERT INTO addresses (user_id, street, city, state, zip)
-VALUES ('51', '1313 Mockingbird Lane', 'Mockingbird Heights', 'Ca', '12345');'
+VALUES ('51', '1313 Mockingbird Lane', 'Mockingbird Heights', 'Ca', '12345');`
 `INSERT INTO orders (user_id, item_id, quantity, created_at)
 VALUES ('51', '92', '1', '2015-02-09 00:40:30.642800');`
 
