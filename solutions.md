@@ -45,7 +45,7 @@ What item was ordered most often? Grossed the most money?
 yields highest grossing:
 `select item_id, sum(quantity), sum(price*quantity) from orders join items on items.id = orders.item_id  group by item_id order by sum(price*quantity) desc limit 1;` 
 
-yields most ordered
+yields most ordered:
 `SELECT item_id, SUM(quantity) FROM orders GROUP BY item_id ORDER BY SUM(quantity) DESC LIMIT 1;`
 
 What user spent the most?
